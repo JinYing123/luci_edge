@@ -1,0 +1,5 @@
+msgid "Edge Compute"
+msgstr "边缘算力"
+
+msgid "Edge Compute Settings"
+msgstr "边缘算力设置"

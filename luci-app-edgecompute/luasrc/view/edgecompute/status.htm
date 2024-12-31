@@ -1,0 +1,13 @@
+<h1><%: Edge Compute Status %></h1>
+<div id="status">
+    <p><%: Current Compute Power: %> <span id="compute-power">Loading...</span></p>
+    <p><%: Status: %> <span id="compute-status">Loading...</span></p>
+</div>
+<script>
+    fetch(L.url("admin/services/edgecompute/status"))
+        .then(res => res.json())
+        .then(data => {
+            document.getElementById("compute-power").innerText = data.compute_power;
+            document.getElementById("compute-status").innerText = data.enable ? "Enabled" : "Disabled";
+        });
+</script>
