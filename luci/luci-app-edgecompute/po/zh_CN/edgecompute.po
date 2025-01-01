@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Edge Compute"
+msgstr "边缘计算"
+
+msgid "Edge Compute Status"
+msgstr "边缘计算状态"
+
+msgid "Device ID"
+msgstr "设备ID"
+
+msgid "Wallet Address"
+msgstr "钱包地址"
+
+msgid "Blockchain"
+msgstr "运行公链"
+
+msgid "BNB Balance"
+msgstr "BNB余额"
+
+msgid "Token Balance"
+msgstr "TOKEN余额"
+
+msgid "Network Power"
+msgstr "全网算力"
+
+msgid "Share Ratio"
+msgstr "占比"

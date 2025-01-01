@@ -1,13 +1,39 @@
-<h1><%: Edge Compute Status %></h1>
-<div id="status">
-    <p><%: Current Compute Power: %> <span id="compute-power">Loading...</span></p>
-    <p><%: Status: %> <span id="compute-status">Loading...</span></p>
+<%+header%>
+
+<div class="cbi-map">
+    <h2 name="content"><%: Edge Compute Status %></h2>
+    
+    <div class="cbi-section">
+        <div class="table">
+            <div class="tr">
+                <div class="td left" width="15%"><%: Device ID %></div>
+                <div class="td left" width="35%">0x123456789abcdef</div>
+                <div class="td left" width="15%"><%: Wallet Address %></div>
+                <div class="td left" width="35%">0xabcdef123456789...</div>
+            </div>
+            
+            <div class="tr">
+                <div class="td left"><%: Blockchain %></div>
+                <div class="td left">BSC</div>
+                <div class="td left"><%: BNB Balance %></div>
+                <div class="td left">0.5 BNB</div>
+            </div>
+            
+            <div class="tr">
+                <div class="td left"><%: Token Balance %></div>
+                <div class="td left">1000 TOKEN</div>
+                <div class="td left"><%: Network Power %></div>
+                <div class="td left">10000 TFLOPS</div>
+            </div>
+            
+            <div class="tr">
+                <div class="td left"><%: Share Ratio %></div>
+                <div class="td left">0.05%</div>
+                <div class="td left"></div>
+                <div class="td left"></div>
+            </div>
+        </div>
+    </div>
 </div>
-<script>
-    fetch(L.url("admin/services/edgecompute/status"))
-        .then(res => res.json())
-        .then(data => {
-            document.getElementById("compute-power").innerText = data.compute_power;
-            document.getElementById("compute-status").innerText = data.enable ? "Enabled" : "Disabled";
-        });
-</script>
+
+<%+footer%>
